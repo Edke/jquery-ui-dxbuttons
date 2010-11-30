@@ -34,3 +34,10 @@ div.dropdown input {
     text-align: left;
 }
 
+div#clickout {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: lightcoral;
+    /*background-color: lightcoral;*/
+}
