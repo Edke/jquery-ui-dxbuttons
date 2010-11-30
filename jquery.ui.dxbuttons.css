@@ -1,0 +1,36 @@
+/* 
+    Document   : jquery.ui.buttons
+    Created on : Nov 30, 2010, 9:44:47 PM
+    Author     : kraken
+*/
+
+div.dropdown {
+    display:block;
+    position:absolute;
+    margin:0;
+    z-index: 0;
+    background-color: #e58f07;
+    -moz-border-radius: 4px/*{cornerRadius}*/;
+    -webkit-border-radius: 4px/*{cornerRadius}*/;
+    border-bottom-right-radius: 4px 4px;
+    border-bottom-left-radius: 4px 4px;
+    border-top-right-radius: 4px 4px;
+    border-top-left-radius: 4px 4px;
+    background-color: #ffffff;
+    border: 1px solid lightgrey;
+}
+
+div.dropdown div.inner {
+    padding: 3px;
+    padding-top: 5px;
+}
+
+div.dropdown div.inner div {
+    padding-bottom: 1px;
+}
+
+div.dropdown input {
+    width: 100%;
+    text-align: left;
+}
+

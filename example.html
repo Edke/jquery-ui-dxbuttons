@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery UI DX Buttons example</title>
+	<link rel="stylesheet" href="http://people.canonical.com/~jriddell/ubuntu-font.css" type="text/css" /> 
+	<link rel="stylesheet" href="jquery.ui.dxbuttons.css">
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/themes/base/jquery-ui.css">
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+
+        <script type="text/javascript" src="jquery.ui.dxbuttons.js"></script>
+        <script type="text/javascript" src="jquery.ui.dxbuttons.dropdown.js"></script>
+
+        <script>
+            $(function() {
+		$('form').dxButtons();
+            });
+        </script>
+        <style>
+            body {
+                font-family: Ubuntu;
+                font-size: 62.5%;
+                background-color: #ffffee;
+            }
+
+            table {
+                font-size: 1em;
+            }
+
+            div.datagrid {
+                width: 100%;
+                height: 400px;
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+
+        <form action="?" method="get">
+            <div class="toolbar" style="margin-top: 15em;">
+
+                <input type="submit" name="add" value="Add" set="main">
+                <input type="submit" name="edit" value="Edit" set="main" disabled>
+                <input type="submit" name="delete" value="Delete" set="main" disabled>
+
+                <input type="submit" name="details" value="Details">
+
+                <button dropdown="other" id="parent">Other actions</button>
+
+                <input type="submit" name="invoice" value="Invoice" dropdown="other" disabled>
+                <input type="submit" name="bookings" value="Bookings" dropdown="other">
+                <input type="submit" name="products" value="Products" dropdown="other">
+
+            </div>
+        </form>
+
+        <div class="datagrid"></div>
+
+    </body>
+</html>
