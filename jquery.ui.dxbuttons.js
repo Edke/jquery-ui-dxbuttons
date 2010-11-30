@@ -56,7 +56,7 @@
 
                             if ( setIndx == 0) {
                                 pointer = button;
-                                var container = $('<span class="buttonset"></span>');
+                                var container = $('<span></span>');
                                 button.after(container);
                             }
                             container.append(button);
@@ -68,7 +68,7 @@
 
                     // build dropdowns
                     for (var dropdown in dropdownsArry) {
-                        dropdownsArry[dropdown].master.datagridToolbarDropdown(dropdownsArry[dropdown].list );
+                        dropdownsArry[dropdown].master.dxButtonsDropdown(dropdownsArry[dropdown].list );
                     }
                 }
 
@@ -89,13 +89,11 @@
 
                 // initianization
                 initialization();
-                alert('initialized');
-
             });
         }
     };
 
-    $.fn.datagridToolbar = function( method ) {
+    $.fn.dxButtons = function( method ) {
 
         // Method calling logic
         if ( methods[method] ) {

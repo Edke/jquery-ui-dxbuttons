@@ -131,7 +131,7 @@
         }
     };
 
-    $.fn.datagridToolbarDropdown = function( method ) {
+    $.fn.dxButtonsDropdown = function( method ) {
 
         // Method calling logic
         if ( methods[method] ) {
