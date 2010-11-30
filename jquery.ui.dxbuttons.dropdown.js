@@ -1,5 +1,5 @@
 /*!
- * DatagridToolbarDropdown v.1.0.0
+ * DxButtonsDropdown v.1.0.0
  * Copyright 2010, Eduard Kracmar
  */
 

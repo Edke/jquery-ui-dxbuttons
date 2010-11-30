@@ -1,5 +1,5 @@
 /*!
- * DatagridToolbar v.1.0.0
+ * DxButtons v.1.0.0
  * Copyright 2010, Eduard Kracmar
  */
 
