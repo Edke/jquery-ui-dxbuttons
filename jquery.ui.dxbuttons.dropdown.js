@@ -51,10 +51,6 @@
                 }
 
                 /*
-
-
-
-
                 $('#toggler').click(function(){
                     $('#main input').each(function(){
                         if( $(this).button('option', 'disabled') ) {
@@ -74,47 +70,6 @@
 
                     return false;
                 })
-
-
-
-                $('#other').button({
-                    icons: {
-                        secondary: "ui-icon-triangle-1-s"
-                    }
-                }).click(function(){
-                    
-                    return false;
-                }).mouseover(function(){
-
-
-                });
-
-
-                $('span#main input').button('option', 'disabled', true);
-
-                $("#dropdown").each(function(){
-
-                    var dropdown = $(this);
-
-                    dropdown.children().mouseover(function(){
-                        dropdown.show();
-                    });
-
-                    if ( dropdown.width() < $('#other').width() ) {
-                        dropdown.css('width', $('#other').css('width'));
-                    }
-
-                    dropdown.hide().position({
-                        "my": "left top",
-                        "at": "left bottom",
-                        "of": "#other",
-                        "collision": "none"
-                    });
-
-                    dropdown.mouseout(function(){
-                        dropdown.hide();
-                    });
-                });
                 */
 
                 // setting defaults

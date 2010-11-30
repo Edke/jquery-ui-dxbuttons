@@ -76,7 +76,6 @@
 		    }
 		}
 
-
 		// plugin settings
 		var settings = {
 		};
