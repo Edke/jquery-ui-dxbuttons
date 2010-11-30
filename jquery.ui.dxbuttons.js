@@ -8,6 +8,10 @@
     var methods = {
 	init : function( options ) {
 	    return this.each(function(){
+		
+		function clickOutUpdate() {
+		    clickOut.width($(window).width()).height($(window).height()).css('z-index', 98);
+		}
 
 		// initialization
 		function initialization() {
@@ -93,7 +97,13 @@
 		    clickOut = $('<div id="clickout"></div>');
 		    $('body').append(clickOut);
 		}
-		clickOut.width($(window).width()).height($(window).height()).css('z-index', 98).hide();
+		clickOutUpdate();
+		clickOut.hide();
+
+		// on window resize update clickOut
+		$(window).resize(function() {
+		    clickOutUpdate();
+		});
 
 		// initianization
 		initialization();
