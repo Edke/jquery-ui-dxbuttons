@@ -25,7 +25,7 @@
 			$this.button().css('z-index', 99);
 
 			// create sets collection
-			var set = $this.attr('set');
+			var set = $this.attr('buttonset');
 			if ( set ) {
 			    if ( !setsArry[set]) {
 				setsArry[set] = [];
