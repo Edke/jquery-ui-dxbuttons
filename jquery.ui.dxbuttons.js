@@ -35,7 +35,7 @@
 
 			// create dropdowns collection
 			var dropdown = $this.attr('dropdown');
-			if ( dropdown ) {
+			if ( dropdown != undefined ) {
 			    if ( !dropdownsArry[dropdown]) {
 				dropdownsArry[dropdown] = {
 				    master : null,
@@ -43,9 +43,9 @@
 				};
 			    }
 
-			    if ( this.tagName == 'BUTTON') {
+			    if ( dropdown == $this.attr('name')  ) {
 				dropdownsArry[dropdown].master = $this;
-			    } else if ( this.tagName == 'INPUT') {
+			    } else {
 				dropdownsArry[dropdown].list.push($this);
 			    }
 			}
