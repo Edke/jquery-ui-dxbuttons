@@ -23,12 +23,9 @@
                         }
                     }).click(function(event){
                         container.toggle();
-
 			if ( container.is(':visible')) {
 			    clickOut.show();
 			}
-
-
                         return false;
                     }).css('z-index', 100);
 
@@ -50,35 +47,12 @@
                     });
                 }
 
-                /*
-                $('#toggler').click(function(){
-                    $('#main input').each(function(){
-                        if( $(this).button('option', 'disabled') ) {
-                            $(this).button('option', 'disabled', false);
-                        } else {
-                            $(this).button('option', 'disabled', true);
-                        }
-                    });
-
-                    $('input[name=sar]').each(function(){
-                        if( $(this).button('option', 'disabled') ) {
-                            $(this).button('option', 'disabled', false);
-                        } else {
-                            $(this).button('option', 'disabled', true);
-                        }
-                    });
-
-                    return false;
-                })
-                */
-
                 // setting defaults
                 var $this = $(this),
                 container = $('<div class="dropdown"><div class="inner"></div></div>'),
 		clickOut = $('#clickout');
 
                 initialization();
-
             });
         }
     };
