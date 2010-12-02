@@ -16,6 +16,14 @@
                 // initialization
                 function initialization() {
 
+                    // clickout overlay
+                    if ( !clickOut.length ) {
+                        clickOut = $('<div id="clickout"></div>');
+                        $('body').append(clickOut);
+                    }
+                    clickOutUpdate();
+                    clickOut.hide();
+
                     // all inputs and buttons
                     $this.find('input[type=submit], button').each(function(){
 
@@ -95,24 +103,17 @@
                 // setting defaults
                 var $this = $(this),
                 setsArry = [],
-                dropdownsArry = [];
-
-                // clickout overlay
-                var clickOut = $('#clickout');
-                if ( !clickOut.length ) {
-                    clickOut = $('<div id="clickout"></div>');
-                    $('body').append(clickOut);
-                }
-                clickOutUpdate();
-                clickOut.hide();
+                dropdownsArry = [],
+                clickOut = $('#clickout');
+                
+                // initianization
+                initialization();
 
                 // on window resize update clickOut
                 $(window).resize(function() {
                     clickOutUpdate();
                 });
 
-                // initianization
-                initialization();
             });
         }
     };
