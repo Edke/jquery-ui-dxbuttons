@@ -33,7 +33,7 @@
                         $this.button().css('z-index', 99);
 
                         // create sets collection
-                        var set = $this.attr('buttonset');
+                        var set = $this.attr('data-buttonset');
                         if ( set ) {
                             if ( !setsArry[set]) {
                                 setsArry[set] = [];
@@ -42,7 +42,7 @@
                         }
 
                         // create dropdowns collection
-                        var dropdown = $this.attr('dropdown');
+                        var dropdown = $this.attr('data-dropdown');
                         if ( dropdown != undefined ) {
                             if ( !dropdownsArry[dropdown]) {
                                 dropdownsArry[dropdown] = {
@@ -54,7 +54,7 @@
                             if ( dropdown == $this.attr('name')  ) {
                                 var button= $('<button type="button">'+$this.attr('value')+'</button>');
                                 button.attr('name', $this.attr('name'));
-                                button.attr('dropdown', dropdown);
+                                button.attr('data-dropdown', dropdown);
 
                                 $this.after(button);
                                 button.button();
