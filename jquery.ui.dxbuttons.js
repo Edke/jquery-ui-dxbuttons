@@ -8,7 +8,7 @@
     var methods = {
         init : function( options ) {
             return this.each(function(){
-		
+
                 function clickOutUpdate() {
                     clickOut.width($(window).width()).height($(window).height()).css('z-index', 98);
                 }
@@ -25,7 +25,7 @@
                     clickOut.hide();
 
                     // all inputs and buttons
-                    $this.find('input[type=submit], button').each(function(){
+                    $this.find('.dxtoolbar input[type=submit], button').each(function(){
 
                         var $this = $(this);
 
@@ -105,7 +105,7 @@
                 setsArry = [],
                 dropdownsArry = [],
                 clickOut = $('#clickout');
-                
+
                 // initianization
                 initialization();
 
